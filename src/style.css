@@ -42,7 +42,7 @@
 }
 
 /*banner*/
-@media (min-width: 1310px) {
+@media (min-width: 515px) {
     .banner {
         background-image: url('/public/fotos/FACHADAPRAIA.jpeg');
         background-size: cover;
@@ -117,7 +117,7 @@
 }
 
 /*empreendimentos*/
-@media (min-width: 1310px) {
+@media (min-width: 515px) {
     .empbic {
         background-color: #4e7586;
         width: 100%;
@@ -363,7 +363,7 @@
 }
 
 /*apartamentos*/
-@media (min-width: 1310px) {
+@media (min-width: 515px) {
     .apto {
         background-color: #4e7586;
         display: flex;
@@ -451,12 +451,19 @@
         font-size: 3.5vw;
     }
 
-    .imgsaptos button {
+    .imgsaptos p {
+        position: absolute;
+        color: white;
+        margin: -0.5vw 0vw;
+        font-size: 1.5vw;
+    }
+
+    .verde button {
         position: absolute;
         border: none;
         background-color: #fff;
         color: #4e7586;
-        margin: 24vw -19.5vw;
+        margin-top: 34vw;
         width: 15vw;
         height: 3vw;
         font-size: 1vw;
@@ -475,32 +482,72 @@
         justify-content: center;
         align-items: center;
         z-index: 10;
-    }
-
-    .overlay-content {
+        overflow: hidden;
+      }
+      
+      .overlay-content {
         position: relative;
-        width: 80vw;
-        max-width: 610px;
-    }
-
-    .overlay-content img {
-        width: 100%;
-        border-radius: 8px;
+        max-width: 90vw;
+        max-height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 20px;
+      }
+      
+      .overlay-content img {
+        width: 30vw;
+        height: auto;
+        max-width: none;
         animation: zoomIn 0.5s ease forwards;
-    }
-
-    .overlay:after {
+        border-radius: 8px;
+      }
+      
+      .overlay-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 5;
+      }
+      
+      .overlay-btn.left {
+        left: 10px;
+      }
+      
+      .overlay-btn.right {
+        right: 10px;
+      }
+      
+      .overlay-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .overlay:after {
         position: absolute;
         top: 20px;
         right: 20px;
         font-size: 24px;
         color: white;
         cursor: pointer;
-    }
+      }
 }
 
 /*contato*/
-@media (min-width: 1310px) {
+@media (min-width: 515px) {
     .contato {
         background-color: #2A4451;
         position: relative;
@@ -560,35 +607,67 @@
 }
 
 /*form*/
-body {
-    font-family: "Poppins", serif;
+@media (min-width: 515px) {
+    body {
+        font-family: "Poppins", serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        font-family: "Poppins", serif;
+        display: grid;
+        border: none;
+        width: 90%;
+        margin: 5px 0 20px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    form button {
+        font-family: "Poppins", serif;
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: #ff752c;
+        margin-top: 20px;
+        width: 60%;
+        border-radius: 5px;
+        padding: 30px;
+        font-size: 25px;
+    }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+/*plantas*/
+@media (min-width: 515px) {
+    .Carrosel{
+        width: 100%;
+        max-width: 900px;
+        min-height: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-form input {
-    font-family: "Poppins", serif;
-    display: grid;
-    border: none;
-    width: 90%;
-    margin: 5px 0 20px;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-}
+    .inner{
+        display: flex;
+    }
 
-form button {
-    font-family: "Poppins", serif;
-    border: none;
-    color: white;
-    font-weight: bold;
-    background-color: #ff752c;
-    margin-top: 20px;
-    width: 60%;
-    border-radius: 5px;
-    padding: 30px;
-    font-size: 25px;
+    .item{
+        min-height: 200pc;
+        min-width: 400x;
+        padding: 4px;
+    }
+
+    .item img{
+        width: 40vw;
+    }
+
+    .carousel{
+        overflow: hidden;
+    }
 }
