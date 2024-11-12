@@ -1,4 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules"; // A partir da versão 9 do Swiper, módulos são importados assim
 
 export const Apartamentos = () => {
   const [activeImage, setActiveImage] = useState(null);
@@ -7,7 +11,6 @@ export const Apartamentos = () => {
   const aptoRef = useRef(null);
   const verdeRef = useRef(null);
 
-  // Defina as imagens que você deseja exibir
   const images = [
     "/outros/PAV 1.png", 
     "/outros/PAV 2.png", 
@@ -17,14 +20,12 @@ export const Apartamentos = () => {
     "/outros/PAV TÉRREO.png"
   ];
 
-  // Função chamada ao clicar no botão para exibir as imagens
   const handleImageClick = () => {
-    setActiveImage(images); // Atualiza o estado com as imagens
+    setActiveImage(images);
   };
 
-  // Fechar o overlay (opcional, caso queira esconder as imagens novamente)
   const closeOverlay = () => {
-    setActiveImage(null); // Limpa as imagens, ocultando o overlay
+    setActiveImage(null);
   };
 
   useEffect(() => {
@@ -105,13 +106,21 @@ export const Apartamentos = () => {
         </div>
         <button onClick={handleImageClick}>VER PLANTAS</button>
 
-        {/* Exibir as imagens diretamente quando o botão for clicado */}
         {activeImage && (
           <div className="overlay" onClick={closeOverlay}>
             <div className="overlay-content">
-              {activeImage.map((image, index) => (
-                <img key={index} src={image} alt={`Imagem ${index + 1}`} />
-              ))}
+              <Swiper
+                spaceBetween={10}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                modules={[Pagination]}
+              >
+                {activeImage.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <img src={image} alt={`Imagem ${index + 1}`} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         )}

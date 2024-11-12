@@ -487,20 +487,19 @@
       
       .overlay-content {
         position: relative;
+        width: 100%;
         max-width: 90vw;
         max-height: 80vh;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        padding: 20px;
       }
       
       .overlay-content img {
-        width: 30vw;
-        height: auto;
-        max-width: none;
+        width: auto;
+        margin: 0 6vw -2vw;
+        max-width: 80vw;
+        max-height: 100%;
         animation: zoomIn 0.5s ease forwards;
         border-radius: 8px;
       }
@@ -543,6 +542,21 @@
         font-size: 24px;
         color: white;
         cursor: pointer;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 4px;
+        opacity: 1;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #fff;
       }
 }
 
