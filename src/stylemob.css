@@ -1,0 +1,442 @@
+/*header*/
+@media (max-width: 510px) {
+    html {
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+
+    .headder {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #608661;
+        color: #FFF;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+
+    .hlogo img {
+        margin: 2vh 4vw;
+        width: 40vw;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #608661;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-in-out;
+        font-size: 4vw;
+    }
+
+    .menu a {
+        text-decoration: none;
+        margin: 10px 0 15px 40px;
+        color: #fefefe;
+    }
+
+    .menu-hamburguer {
+        padding-right: 20px;
+        display: block;
+    }
+
+    .menu.show {
+        max-height: 75vh;
+    }
+}
+
+/*banner*/
+@media (max-width: 510px) {
+    .banner {
+        background-image: url('/public/fotos/FACHADAPRAIA.jpeg');
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .gradient {
+        display: flex;
+        background: linear-gradient(to right, #4e7586, transparent);
+        height: 100%;
+        width: 100%;
+    }
+
+    .txt .titulo {
+        font-family: "Poppins", serif;
+        color: white;
+        margin: 50vw -25vw 0;
+        width: 80vw;
+        font-size: 5.5vw;
+        animation: slideInFromLeft 5s ease forwards;
+    }
+
+    .txt p {
+        font-family: "Poppins", serif;
+        color: white;
+        margin: 3vw -25vw 0;
+        width: 80vw;
+        font-size: 4vw;
+        animation: slideInFromLeft 6s ease forwards;
+    }
+
+    .txt button {
+        font-family: "Poppins", serif;
+        background-color: #ff752c;
+        color: white;
+        margin: 3vw -25vw 0;
+        width: 50vw;
+        height: 5vh;
+        font-size: 4vw;
+        border: none;
+        animation: slideInFromLeft 7s ease forwards;
+    }
+
+    .gradient .estrelab {
+        margin: 15vw 0 0 -2vw;
+        width: 20vw;
+        height: 20vw;
+        animation: slideInFromLeft 3s ease-out;
+    }
+
+    .gradient .estrelal {
+        margin: 25vw 0 0 0;
+        width: 15vw;
+        height: 15vw;
+        transform: rotate(55deg);
+        animation: slideInFromLeftestrela 3s ease-out;
+    }
+
+    .banner .penab {
+        margin: -40vw 0vw 0vw 60%;
+        width: 40vw;
+        height: 40vw;
+        transform: rotate(75deg);
+        animation: slideUpPena 3s ease-out;
+    }
+}
+
+/*empreendimentos*/
+@media (max-width: 510px) {
+    .empbic {
+        display: grid;
+        grid-template-rows: 100% auto;
+        background-color: #4e7586;
+        width: 100%;
+    }
+
+    .laranja {
+        background-color: #ff752c;
+        background-image: url('/public/simblos/coqueirob.png');
+        background-repeat: no-repeat;
+        background-position: -30vw -4vh;
+        background-size: 40vh;
+        width: 100%;
+        height: 20%;
+    }
+
+    .laranja .fundo {
+        margin: 50px 0 0 9%;
+        width: 80%;
+        aspect-ratio: 16 / 9;
+    }
+
+
+    .txtemp {
+        width: 95%;
+        margin: 10px 4vw;
+    }
+
+    .txtemp h1 {
+        font-family: "Poppins", serif;
+        color: white;
+        font-size: 4.8vw;
+    }
+
+    .difemp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: -3vh auto 50px;
+    }
+
+    .difemp p {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        border: white solid 1px;
+        padding: 10px;
+        font-size: 3vw;
+        margin: 3vh 0 0 0vh;
+    }
+
+    .difemp img {
+        width: 7vw;
+        margin-right: 3vw;
+    }
+
+
+    .animate.ondasv {
+        display: none;
+        position: absolute;
+        width: 33%;
+        height: 55px;
+        top: 1285px;
+        right: 57%;
+        z-index: 3;
+        animation: slideInFromRight 1s ease-out;
+    }
+
+    .animate.conchal {
+        display: none;
+        position: absolute;
+        width: 15%;
+        height: 55px;
+        top: 1340px;
+        right: -4%;
+        z-index: 3;
+        animation: slideInFromRight 1s ease-out;
+    }
+
+    .galeria.gallery-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .galeria {
+        transition: max-height 1s ease;
+        background-color: #efefef;
+        text-align: center;
+        width: 100%;
+    }
+
+    .galeria img {
+        margin: 0vh 4vw;
+        width: 90vw;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        transition: transform 5s ease, opacity 5s ease;
+    }
+
+    .overlaye {
+        display: none;
+    }
+}
+
+/*apartamentos*/
+@media (max-width: 510px) {
+    .apto {
+        background-color: #4e7586;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .txtapto {
+        width: 95%;
+    }
+
+    .txtapto h1 {
+        color: #efefef;
+        margin: 10px 5vw 5px;
+        font-size: 2.8vh;
+        text-align: justify;
+    }
+
+    .txtapto p {
+        color: #efefef;
+        margin: 10px 5vw 30px;
+        font-size: 1.9vh;
+        text-align: justify;
+    }
+
+    .ftsapto img {
+        margin: 50px 4vw 10px;
+        width: 90%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .animateapto .palhab1 {
+        display: none;
+        position: absolute;
+        width: 20%;
+        top: 4160px;
+        left: -2.5vh;
+        transform: rotate(60deg);
+        animation: slideInFromLeftestrela 1.5s ease forwards;
+    }
+
+    .animateapto .palhab2 {
+        display: none;
+        width: 15vw;
+        margin: 1px 0 0 -10vw;
+        animation: slideUpPalha 1.5s ease forwards;
+    }
+
+    .verde {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        overflow: hidden;
+        background-color: #608661;
+    }
+
+    .imgsaptos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 30px 0;
+    }
+
+    .imgsaptos img {
+        width: 85vw;
+        aspect-ratio: 1 / 1;
+        border-radius: 10px;
+    }
+
+    .imgsaptos h1 {
+        position: absolute;
+        color: white;
+        width: 40vw;
+        font-size: 9vw;
+        text-align: center;
+        margin: 0 40vw 70vw 0;
+    }
+
+    .imgsaptos:nth-of-type(2) h1 {
+        position: absolute;
+        color: white;
+        width: 100vw;
+        font-size: 9vw;
+        text-align: center;
+        margin: 0 0 70vw;
+    }
+
+    .imgsaptos button {
+        border: none;
+        background-color: #fff;
+        color: #4e7586;
+        margin-top: -1.5vh;
+        width: 40%;
+        height: 8vw;
+        font-size: 3vw;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .overlay {
+        display: none;
+    }
+}
+
+/*contato*/
+@media (max-width: 510px) {
+    .contato {
+        background-color: #2A4451;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .form {
+        color: white;
+        margin: 0 5vw 50px;
+    }
+
+    .form h1 {
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        margin-bottom: -10px;
+    }
+
+    .form p {
+        font-family: "Poppins", serif;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .entreemcontato {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .entreemcontato h1 {
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        margin: 2vh 4vw;
+    }
+
+    .entreemcontato img {
+        width: 5vw;
+        margin-right: 4vw;
+    }
+
+    .entreemcontato a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        justify-items: center;
+        color: #fefefe;
+        font-size: 5vw;
+        margin: 1vw 4vw;
+    }
+
+    .entreemcontato .logoc {
+        width: 80vw;
+        margin: 40px 0;
+    }
+}
+
+/*form*/
+@media (max-width: 510px) {
+    body {
+        font-family: "Poppins", serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        font-family: "Poppins", serif;
+        display: grid;
+        border: none;
+        width: 90%;
+        margin: 5px 0 20px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    form button {
+        font-family: "Poppins", serif;
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: #ff752c;
+        margin-top: 25px;
+        width: 95%;
+        border-radius: 5px;
+        padding: 30px;
+        font-size: 4.9vw;
+    }
+}

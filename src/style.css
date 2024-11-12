@@ -1,0 +1,594 @@
+/*header*/
+@media (min-width: 515px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .headder {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #608661;
+        color: #FFF;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+
+    .hlogo img {
+        margin: 2vh 4vw;
+        width: 13vw;
+    }
+
+    .menu {
+        font-size: 1vw;
+        margin: 0 4vw 0 0;
+    }
+
+    .menu a {
+        font-family: "Poppins", serif;
+        color: #FFF;
+        text-decoration: none;
+        margin: 0 1vw;
+    }
+
+    .menu-hamburguer {
+        display: none;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/*banner*/
+@media (min-width: 1310px) {
+    .banner {
+        background-image: url('/public/fotos/FACHADAPRAIA.jpeg');
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: slideDown 5s ease-out forwards;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .gradient {
+        display: flex;
+        background: linear-gradient(to right, #4e7586, transparent);
+        height: 100%;
+        width: 50vw;
+    }
+
+    .txt .titulo {
+        font-family: "Poppins", serif;
+        color: white;
+        margin: 18vw 0 0;
+        width: 30vw;
+        font-size: 2vw;
+        animation: slideInFromLeft 5s ease forwards;
+    }
+
+    .txt p {
+        font-family: "Poppins", serif;
+        color: white;
+        margin: 0.5vw 0;
+        width: 20vw;
+        font-size: 1vw;
+        animation: slideInFromLeft 6s ease forwards;
+    }
+
+    .txt button {
+        font-family: "Poppins", serif;
+        background-color: #ff752c;
+        color: white;
+        margin: 1vw 0vw;
+        width: 15vw;
+        height: 8vh;
+        font-size: 1.2vw;
+        border-radius: 5px;
+        border: none;
+        animation: slideInFromLeft 7s ease forwards;
+    }
+
+    .gradient .estrelab {
+        margin: 5vw 0 0 -2vw;
+        width: 7vw;
+        height: 7vw;
+        animation: slideInFromLeft 3s ease-out;
+    }
+
+    .gradient .estrelal {
+        margin: 9vw 0 0 0;
+        width: 5vw;
+        height: 5vw;
+        transform: rotate(55deg);
+        animation: slideInFromLeftestrela 3s ease-out;
+    }
+
+    .banner .penab {
+        margin: -19vw 0vw 0vw 69vw;
+        width: 20vw;
+        height: 20vw;
+        transform: rotate(75deg);
+        animation: slideUpPena 3s ease-out;
+    }
+}
+
+/*empreendimentos*/
+@media (min-width: 1310px) {
+    .empbic {
+        background-color: #4e7586;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .animate .laranja {
+        background-color: #ff752c;
+        background-image: url('/public/simblos/coqueirob.png');
+        background-repeat: no-repeat;
+        animation: fadeIn 1s ease forwards;
+        background-position: -15vw -4vh;
+        background-size: 82vh;
+        animation: slideInFromLeft 1s ease forwards;
+        width: 40%;
+        height: 100%;
+    }
+
+    .animate .laranja .fundo {
+        margin: 16vh 0 0 10vw;
+        width: 40vw;
+        height: 46vh;
+        animation: slideInFromLeft 1.5s ease forwards;
+    }
+
+    .animate .txtemp {
+        width: 30vw;
+        margin: -49vh 0 0 55vw;
+    }
+
+    .animate .txtemp h1 {
+        font-family: "Poppins", serif;
+        color: white;
+        font-size: 1.5vw;
+        animation: slideInFromRight 1.5s ease forwards;
+    }
+
+    .animate .difemp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: space-between;
+        animation: slideInFromRight 1.5s ease forwards;
+        width: 29vw;
+        margin: -1vh 0 0 54vw;
+    }
+
+    .difemp p {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        border: white solid 1px;
+        padding: 10px;
+        font-size: 1vw;
+        margin: 3vh 0 0 1vh;
+    }
+
+    .difemp img {
+        width: 1.8vw;
+        margin-right: 1vw;
+    }
+
+    .animate.ondasv {
+        position: absolute;
+        width: 10vw;
+        top: -2.5vw;
+        right: 35vw;
+        z-index: 3;
+        animation: slideInFromRight 1s ease-out;
+    }
+
+    .animate.conchal {
+        position: absolute;
+        width: 10vw;
+        top: 3vw;
+        right: 0vw;
+        z-index: 3;
+        animation: slideInFromRight 1s ease-out;
+    }
+
+    .galeria {
+        transition: max-height 1s ease;
+        background-color: #efefef;
+        text-align: center;
+        width: 100%;
+        transform: translateY(50px);
+        transition: all 0.7s ease;
+        margin-top: -7vh;
+        padding: 5vw 0;
+    }
+
+    .galeria.gallery-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .galeria img {
+        margin: 1vw;
+        transition: transform 5s ease, opacity 5s ease;
+    }
+
+    .gallery-image:nth-child(1),
+    .gallery-image:nth-child(2) {
+        width: 46vw;
+        aspect-ratio: 16 / 9;
+    }
+
+    .gallery-image:nth-child(3),
+    .gallery-image:nth-child(4),
+    .gallery-image:nth-child(5) {
+        width: 30vw;
+        aspect-ratio: 16 / 9;
+    }
+
+    .gallery-image:nth-child(6) {
+        width: 24vw;
+        height: 26vh;
+    }
+
+    .gallery-image:nth-child(7) {
+        width: 20vw;
+        height: 26vh;
+    }
+
+    .gallery-image:nth-child(8) {
+        width: 19vw;
+        height: 26vh;
+    }
+
+    .gallery-image:nth-child(9) {
+        width: 25vw;
+        height: 26vh;
+    }
+
+    .gallery-image {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .gallery-image.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .navigation-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .nav-button {
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        pointer-events: auto;
+        transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-button:active {
+        background-color: #e0e0e0;
+    }
+
+    .nav-button:focus {
+        outline: none;
+    }
+
+    .slide-in-left {
+        animation: slideInLeft 0.5s forwards;
+    }
+
+    .slide-in-right {
+        animation: slideInRight 0.5s forwards;
+    }
+
+    .overlaye {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .overlaye-content {
+        width: 90vw;
+        max-width: 1210px;
+        height: auto;
+        max-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: zoomIn 0.5s ease forwards;
+    }
+
+    .overlaye-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        animation: zoomIn 0.5s ease forwards;
+    }
+
+    .overlay-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        animation: zoomOut 0.5s ease forwards;
+    }
+
+    .overlay-content.zoom-in {
+        animation: zoomIn 0.5s ease forwards;
+    }
+
+    .overlay-content.zoom-out {
+        animation: zoomOut 0.5s ease forwards;
+    }
+
+}
+
+/*apartamentos*/
+@media (min-width: 1310px) {
+    .apto {
+        background-color: #4e7586;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: 90vh;
+    }
+
+    .txtapto {
+        width: 35vw;
+        margin-left: 7vh;
+    }
+
+    .txtapto h1 {
+        color: #efefef;
+        font-size: 1.7vw;
+    }
+
+    .txtapto p {
+        color: #efefef;
+        font-size: 1.1vw;
+    }
+
+    .ftsapto {
+        margin-left: 15vh;
+    }
+
+    .ftsapto img {
+        width: 45vw;
+        height: 55vh;
+    }
+
+    .animate-left {
+        animation: slideInFromLeft 1.5s ease forwards;
+    }
+
+    .animate-right {
+        animation: slideInFromRight 1.5s ease forwards;
+    }
+
+    .animateapto .palhab1 {
+        position: absolute;
+        width: 20vw;
+        top: 310vh;
+        left: -2.5vh;
+        transform: rotate(60deg);
+        animation: slideInFromLeftestrela 1.5s ease forwards;
+    }
+
+    .animateapto .palhab2 {
+        width: 15vw;
+        margin: 70vh 0 0 -48vw;
+        animation: slideUpPalha 1.5s ease forwards;
+    }
+
+    .verde {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #608661;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .imgsaptos {
+        position: relative;
+        opacity: 0;
+    }
+
+    .imgsaptos.animate-left {
+        animation: slideInFromLeft 1s ease forwards;
+        opacity: 1;
+    }
+
+    .imgsaptos img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .imgsaptos h1 {
+        position: absolute;
+        color: white;
+        width: 15vw;
+        margin: 2vh;
+        font-size: 3.5vw;
+    }
+
+    .imgsaptos button {
+        position: absolute;
+        border: none;
+        background-color: #fff;
+        color: #4e7586;
+        margin: 24vw -19.5vw;
+        width: 15vw;
+        height: 3vw;
+        font-size: 1vw;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .overlay-content {
+        position: relative;
+        width: 80vw;
+        max-width: 610px;
+    }
+
+    .overlay-content img {
+        width: 100%;
+        border-radius: 8px;
+        animation: zoomIn 0.5s ease forwards;
+    }
+
+    .overlay:after {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/*contato*/
+@media (min-width: 1310px) {
+    .contato {
+        background-color: #2A4451;
+        position: relative;
+        display: flex;
+        justify-items: center;
+        padding: 7vh 7vw;
+        z-index: 1;
+    }
+
+    .form {
+        color: white;
+        padding: 3vw;
+    }
+
+    .form h1 {
+        font-family: "Poppins", serif;
+        font-size: 30px;
+        margin-bottom: -10px;
+    }
+
+    .form p {
+        font-family: "Poppins", serif;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .entreemcontato {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 3vw;
+    }
+
+    .entreemcontato h1 {
+        font-family: "Poppins", serif;
+        font-size: 30px;
+    }
+
+    .entreemcontato img {
+        width: 2vw;
+        margin-right: 1vw;
+    }
+
+    .entreemcontato a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fefefe;
+        font-size: 1vw;
+        margin: 1vw;
+    }
+
+    .entreemcontato .logoc {
+        width: 16vw;
+    }
+}
+
+/*form*/
+body {
+    font-family: "Poppins", serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-family: "Poppins", serif;
+    display: grid;
+    border: none;
+    width: 90%;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form button {
+    font-family: "Poppins", serif;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #ff752c;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 25px;
+}
