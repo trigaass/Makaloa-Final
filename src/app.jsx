@@ -9,6 +9,7 @@ import "./style.css"
 import "./styleuw.css"
 import "./stylemob.css"
 import "./keyframes.css"
+import { Footer } from "./components/footer/footer";
 
 document.body.style.margin = "0";
 document.body.style.overflowX = "hidden";
@@ -23,6 +24,7 @@ export const App = () => {
             <Apartamentos />
             <Localização />
             <Contato />
+            <Footer />
         </>
     )
 }

@@ -85,7 +85,7 @@ export const Empreendimento = () => {
         const index = imageSources.indexOf(src);
         setActiveImage(src);
         setActiveImageIndex(index);
-        setAnimationClass(""); // Remove qualquer classe de animação prévia
+        setAnimationClass("");
         setTimeout(() => {
             setAnimationClass("slide-in-right");
         }, 0);
@@ -95,7 +95,7 @@ export const Empreendimento = () => {
         if (activeImageIndex !== null) {
             const nextIndex = (activeImageIndex + 1) % imageSources.length;
             setActiveImageIndex(nextIndex);
-            setAnimationClass(""); // Remove qualquer classe de animação prévia
+            setAnimationClass("");
             setTimeout(() => {
                 setActiveImage(imageSources[nextIndex]);
                 setAnimationClass("slide-in-right");
@@ -107,7 +107,7 @@ export const Empreendimento = () => {
         if (activeImageIndex !== null) {
             const prevIndex = (activeImageIndex - 1 + imageSources.length) % imageSources.length;
             setActiveImageIndex(prevIndex);
-            setAnimationClass(""); // Remove qualquer classe de animação prévia
+            setAnimationClass("");
             setTimeout(() => {
                 setActiveImage(imageSources[prevIndex]);
                 setAnimationClass("slide-in-left");
@@ -122,7 +122,7 @@ export const Empreendimento = () => {
     };
 
     const handleButtonClick = (e, direction) => {
-        e.stopPropagation(); // Impede que o clique se propague para a sobreposição
+        e.stopPropagation();
         if (direction === "next") {
             navigateToNextImage();
         } else {

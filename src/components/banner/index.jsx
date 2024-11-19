@@ -20,7 +20,7 @@ export const Banner = () => {
                         <p>
                             UM ESPAÇO QUE UNE NATUREZA E LUXO, PROJETADO PARA SEU BEM ESTAR
                         </p>
-                        <button onClick={scrollToBottom}>QUERO SABER MAIS</button>
+                        <button onClick={scrollToBottom}>Quero saber mais</button>
                     </div>
                 </div>
                 <img src="/simblos/penab.png" className="penab" />

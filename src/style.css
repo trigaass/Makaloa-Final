@@ -83,8 +83,9 @@
         font-family: "Poppins", serif;
         background-color: #ff752c;
         color: white;
+        font-weight: bold;
         margin: 1vw 0vw;
-        width: 15vw;
+        width: 16vw;
         height: 8vh;
         font-size: 1.2vw;
         border-radius: 5px;
@@ -145,7 +146,7 @@
 
     .animate .txtemp {
         width: 30vw;
-        margin: -49vh 0 0 55vw;
+        margin: -49vh 0 0 55.5vw;
     }
 
     .animate .txtemp h1 {
@@ -156,13 +157,12 @@
     }
 
     .animate .difemp {
-        display: flex;
-        flex-wrap: wrap;
-        justify-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4 auto);
         animation: slideInFromRight 1.5s ease forwards;
-        width: 29vw;
-        margin: -1vh 0 0 54vw;
+        width: 32vw;
+        margin: -1vh 0 0 52.5vw;
     }
 
     .difemp p {
@@ -171,9 +171,11 @@
         font-weight: bold;
         color: white;
         border: white solid 1px;
-        padding: 10px;
+        padding: 15px 15px;
         font-size: 1vw;
-        margin: 3vh 0 0 1vh;
+        height: 1vw;
+        width: 14vw;
+        margin: 3vh 0 0 1.5vh;
     }
 
     .difemp img {
@@ -620,6 +622,28 @@
     }
 }
 
+/*footer*/
+@media (min-width: 515px){
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        background-color: #608661;
+        width: 100%;
+    }
+
+    .footer h1{
+        font-family: "Poppins", serif;
+        color: white;
+        font-size: 0.7vw;
+    }
+
+    .footer a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
 /*form*/
 @media (min-width: 515px) {
     body {
@@ -651,7 +675,7 @@
         margin-top: 20px;
         width: 60%;
         border-radius: 5px;
-        padding: 30px;
+        padding: 25px;
         font-size: 25px;
     }
 }

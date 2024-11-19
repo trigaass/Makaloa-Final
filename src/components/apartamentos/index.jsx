@@ -81,8 +81,8 @@ export const Apartamentos = () => {
                 <div className={`txtapto ${isAptoVisible ? "animate-right" : ""}`}>
                     <h1>Tranquilidade e proteção em cada detalhe do seu lar à beira-mar.</h1>
                     <p>O Makaloa Premium está situado à beira-mar em Porto de Galinhas, destino renomado por suas piscinas naturais de águas cristalinas e mornas, que abrigam uma rica diversidade de vida marinha. Esta praia, considerada uma das melhores do Brasil, é cercada por coqueirais, arrecifes e um clima tropical que atrai visitantes o ano inteiro.
-
-                        Além disso, Porto de Galinhas preserva uma rica cultura local, com artesanato típico e uma gastronomia diversificada, oferecendo uma experiência única tanto para turistas quanto para moradores. Ao longo do ano, o clima tropical favorece atividades ao ar livre, tornando este lugar um refúgio de beleza natural e tranquilidade.</p>
+                            <br/><br/>
+                    Além disso, Porto de Galinhas preserva uma rica cultura local, com artesanato típico e uma gastronomia diversificada, oferecendo uma experiência única tanto para turistas quanto para moradores. Ao longo do ano, o clima tropical favorece atividades ao ar livre, tornando este lugar um refúgio de beleza natural e tranquilidade.</p>
                 </div>
                 <div className={`enfeiteapto ${isAptoVisible ? "animateapto" : ""}`}>
                     <img src="simblos/palhab.png" className="palhab1" />
