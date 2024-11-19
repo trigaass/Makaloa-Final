@@ -94,7 +94,7 @@ export const Apartamentos = () => {
                 <div className={`imgsaptos ${isVerdeVisible ? "animate-left" : ""}`}>
                     <h1>Studios</h1>
                     <img src="fotos/MAKALOAc.jpeg" alt="Studios" />
-                    <p>18,45m à 23,13m²</p>
+                    <p>18,45 à 23,13m²</p>
                 </div>
                 <div className={`imgsaptos ${isVerdeVisible ? "animate-left" : ""}`}>
                     <h1>Quartos & Salas</h1>

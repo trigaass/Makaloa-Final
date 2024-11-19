@@ -223,7 +223,7 @@
     }
 
     .galeria img {
-        margin: 0vh 4vw;
+        margin: 2vh 4vw;
         width: 90vw;
         aspect-ratio: 16 / 9;
         object-fit: cover;
@@ -350,16 +350,100 @@
         background-color: #fff;
         color: #4e7586;
         margin-top: -1.5vh;
-        width: 40%;
-        height: 8vw;
-        font-size: 3vw;
+        width: 60%;
+        height: 10vw;
+        font-size: 4vw;
         font-weight: bold;
         border-radius: 5px;
     }
 
     .overlay {
-        display: none;
-    }
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        overflow: hidden;
+      }
+      
+      .overlay-content {
+        position: relative;
+        width: 100%;
+        max-width: 90vw;
+        max-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .overlay-content img {
+        width: auto;
+        margin: 0 6vw -2vw;
+        max-width: 90vw;
+        max-height: 100%;
+        animation: zoomIn 0.5s ease forwards;
+        border-radius: 8px;
+      }
+      
+      .overlay-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 5;
+      }
+      
+      .overlay-btn.left {
+        left: 10px;
+      }
+      
+      .overlay-btn.right {
+        right: 10px;
+      }
+      
+      .overlay-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .overlay:after {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 4px;
+        opacity: 1;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #fff;
+      }
 }
 
 /*contato*/
