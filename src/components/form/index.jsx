@@ -26,16 +26,13 @@ export const Formulario = () => {
         });
 
         if (response.ok) {
-            alert("Cadastro realizado com sucesso!");
             setNome("");
             setFone("");
             setEmail("");
           } else {
-            alert("Erro ao realizar o cadastro.");
           }
         } catch (error) {
           console.error("Erro:", error);
-          alert("Erro ao conectar com o servidor.");
         }
       };
 

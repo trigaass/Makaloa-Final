@@ -12,12 +12,12 @@ export const Apartamentos = () => {
     const verdeRef = useRef(null);
 
     const images = [
-        "/outros/PAV 1.png",
-        "/outros/PAV 2.png",
-        "/outros/PAV 3I.png",
-        "/outros/PAV 3S.png",
-        "/outros/PAV ROOFTOP.png",
-        "/outros/PAV TÉRREO.png"
+        "/outros/PAV-1.jpeg",
+        "/outros/PAV-2.jpeg",
+        "/outros/PAV.-3I.jpeg",
+        "/outros/PAV.-3S.jpeg",
+        "/outros/PAV-ROOFTOP.jpeg",
+        "/outros/PAV-TÉRREO.jpeg"
     ];
 
     const handleImageClick = () => {

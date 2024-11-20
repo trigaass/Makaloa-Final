@@ -383,7 +383,7 @@
       
       .overlay-content img {
         width: auto;
-        margin: 0 auto -2vw;
+        margin: 0 auto 2vw;
         max-width: 100vw;
         max-height: 100%;
         animation: zoomIn 0.5s ease forwards;
